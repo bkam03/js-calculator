@@ -1,15 +1,15 @@
 /**
  * Declare a function named `calculatorModule`
  * this function will have two private variables declared inside of it.
- * @variable PRIVATE { Number } `memory`
- * @variable PRIVATE { Number } `total`
+ * @variable PRIVATE { Number } `_memory`
+ * @variable PRIVATE { Number } `_total`
  * @return {object} `calculator` object that can be used
  */
 function calculatorModule(){
 
   //private var
-  var memory = 0;
-  var total = 0;
+  var _memory = 0;
+  var _total = 0;
   //private methods
 
   //public var
@@ -17,76 +17,76 @@ function calculatorModule(){
   //public methods
   /**
 
-   * sets the `total` to the number passed in
+   * sets the `_total` to the number passed in
    * @param  { Number } x
-   * @return { Number }    current total
+   * @return { Number }    current _total
    */
   function load(num){
-    total = num;
-    return total;
+    _total = num;
+    return _total;
   }
     /**
-   * Return the value of `total`
+   * Return the value of `_total`
    * @return { Number }
    */
   function getTotal(num){
-    return total;
+    return _total;
   }
 
   /**
-   * Sums the value passed in with `total`
+   * Sums the value passed in with `_total`
    * @param { Number } x
    */
   function add(num){
-    total += num;
+    _total += num;
   }
 
   /**
-   * Subtracts the value passed in from `total`
+   * Subtracts the value passed in from `_total`
    * @param  { Number } x
    */
   function subtract(num) {
-    total -= num;
+    _total -= num;
   }
 
   /**
-   * Multiplies the value by `total`
+   * Multiplies the value by `_total`
    * @param  { Number } x
    */
 
    function multiply(num) {
-     total *= num;
+     _total *= num;
    }
 
   /**
-   * Divides the value passing in by `total`
+   * Divides the value passing in by `_total`
    * @param  { Number } x
    */
   function divide(num) {
-    total /= num;
+    _total /= num;
   }
 
   /**
-   * Return the value stored at `memory`
+   * Return the value stored at `_memory`
    * @return { Number }
    */
   function recallMemory() {
-    return memory;
+    return _memory;
   }
 
   /**
-   * Stores the value of `total` to `memory`
+   * Stores the value of `_total` to `_memory`
    */
   function saveMemory(){
-    memory = total;
+    _memory = _total;
   }
 
   /**
-   * Clear the value stored at `memory`
+   * Clear the value stored at `_memory`
    */
 
   function clearMemory(){
-
+    _memory = 0;
   }
 
   /**
