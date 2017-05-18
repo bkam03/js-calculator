@@ -11,7 +11,12 @@ function calculatorModule(){
   var _memory = 0;
   var _total = 0;
   //private methods
-
+  function validation(num){
+    console.log(arguments);
+    if(typeof num !== "number" || isNaN(num)) {
+      throw new Error("err");
+    }
+  }
   //public var
 
   //public methods
@@ -22,8 +27,9 @@ function calculatorModule(){
    * @return { Number }    current _total
    */
   function load(num){
-    _total = num;
-    return _total;
+      validation(num);
+        _total = num;
+        return _total;
   }
     /**
    * Return the value of `_total`
