@@ -44,6 +44,7 @@ function calculatorModule(){
    * @param { Number } x
    */
   function add(num){
+    validation(num);
     _total += num;
   }
 
@@ -52,6 +53,7 @@ function calculatorModule(){
    * @param  { Number } x
    */
   function subtract(num) {
+    validation(num);
     _total -= num;
   }
 
@@ -61,6 +63,7 @@ function calculatorModule(){
    */
 
    function multiply(num) {
+    validation(num);
      _total *= num;
    }
 
@@ -69,6 +72,7 @@ function calculatorModule(){
    * @param  { Number } x
    */
   function divide(num) {
+    validation(num);
     _total /= num;
   }
 
