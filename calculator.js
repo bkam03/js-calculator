@@ -5,7 +5,24 @@
  * @variable PRIVATE { Number } `total`
  * @return {object} `calculator` object that can be used
  */
+function calculatorModule(){
 
+  //private var
+  var memory = 0;
+  var total = 0;
+  //private methods
+
+  //public var
+
+  //public methods
+  function load(num){
+    this.total = num;
+  }
+
+  return {
+    load : load
+  };
+}
 
   /**
    * sets the `total` to the number passed in
@@ -63,3 +80,4 @@
    * Validation
    */
 
+var myCalc = new calculatorModule();
