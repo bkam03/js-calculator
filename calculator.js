@@ -54,6 +54,9 @@ function calculatorModule(){
    * @param  { Number } x
    */
 
+   function multiply(num) {
+     total *= num;
+   }
 
   /**
    * Divides the value passing in by `total`
@@ -84,7 +87,8 @@ function calculatorModule(){
     load : load,
     getTotal : getTotal,
     add : add,
-    subtract : subtract
+    subtract : subtract,
+    multiply : multiply
   };
 }
 
