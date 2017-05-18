@@ -16,7 +16,8 @@ function calculatorModule(){
 
   //public methods
   function load(num){
-    this.total = num;
+    total = num;
+    return total;
   }
 
   return {
