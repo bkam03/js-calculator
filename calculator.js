@@ -15,28 +15,23 @@ function calculatorModule(){
   //public var
 
   //public methods
-  function load(num){
-    total = num;
-    return total;
-  }
-
-  return {
-    load : load
-  };
-}
-
   /**
+
    * sets the `total` to the number passed in
    * @param  { Number } x
    * @return { Number }    current total
    */
-
-
-  /**
+  function load(num){
+    total = num;
+    return total;
+  }
+    /**
    * Return the value of `total`
    * @return { Number }
    */
+  function getTotal(num){
 
+  }
 
   /**
    * Sums the value passed in with `total`
@@ -80,5 +75,14 @@ function calculatorModule(){
   /**
    * Validation
    */
+
+  return {
+    load : load,
+    getTotal : getTotal
+  };
+}
+
+
+
 
 var myCalc = new calculatorModule();
