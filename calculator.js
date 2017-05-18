@@ -46,7 +46,7 @@ function calculatorModule(){
    * @param  { Number } x
    */
   function subtract(num) {
-
+    total -= num;
   }
 
   /**
