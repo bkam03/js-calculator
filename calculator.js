@@ -30,7 +30,7 @@ function calculatorModule(){
    * @return { Number }
    */
   function getTotal(num){
-
+    return total;
   }
 
   /**
